@@ -261,11 +261,14 @@ body {
     font-size: 50px;
   }
   .span-main {
-    font-size: 20px;
+    font-size: 10px;
   }
   * {
     background-color: black;
     background-image: url("../assets/op2.png");
+  }
+  .button {
+    font-size: 10px;
   }
 }
 
