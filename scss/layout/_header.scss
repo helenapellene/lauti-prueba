@@ -1,0 +1,21 @@
+.css-nav{
+    background-color: transparent !important;
+  
+    .logo{
+        width: 70px;
+    }
+    .css-ul{
+        gap: 2rem;
+        align-items: center;
+        a{
+            color:white !important;
+            font-family: 'Rubik', sans-serif;
+            font-size: 18px;
+            &:hover{
+                color:rgb(134, 5, 5) !important;
+                font-weight: bold;
+                text-decoration: underline rgb(134, 5, 5);
+            }
+        }
+    } 
+}
