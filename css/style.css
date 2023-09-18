@@ -52,7 +52,7 @@ body {
   justify-content: center;
   align-items: center;
   left: 50%;
-  bottom: 20px;
+  bottom: 50px;
   transform: translateX(-50%);
 }
 
@@ -128,6 +128,90 @@ body {
   text-decoration: underline rgb(134, 5, 5);
 }
 
+.bg-footer {
+  background-color: #33383c;
+  padding: 50px 0 30px;
+}
+
+.footer-heading {
+  letter-spacing: 2px;
+}
+
+.footer-link a {
+  color: #acacac;
+  line-height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+
+.footer-link a:hover {
+  color: #1bbc9b;
+}
+
+.contact-info {
+  color: #acacac;
+  font-size: 14px;
+}
+
+.footer-social-icon {
+  font-size: 15px;
+  height: 34px;
+  width: 34px;
+  line-height: 34px;
+  border-radius: 3px;
+  text-align: center;
+  display: inline-block;
+}
+
+.facebook {
+  background-color: #4e71a8;
+  color: #ffffff;
+}
+
+.twitter {
+  background-color: #55acee;
+  color: #ffffff;
+}
+
+.google {
+  background-color: #d6492f;
+  color: #ffffff;
+}
+
+.apple {
+  background-color: #424041;
+  color: #ffffff;
+}
+
+.footer-alt {
+  color: #acacac;
+}
+
+.footer-heading {
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer-heading:after {
+  content: "";
+  width: 25px;
+  border-bottom: 1px solid #FFF;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  border-bottom: 1px solid #1bbc9b;
+}
+
+body {
+  background-color: black;
+  background-position: center;
+  background-image: url("../assets/contact2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 #hero {
   height: 100vh;
 }
@@ -147,6 +231,70 @@ body {
   color: white;
   font-size: 25px;
   margin: 2rem;
+}
+
+.promocard {
+  width: 170px;
+}
+
+.section-title {
+  color: white;
+  font-size: 70px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.7rem;
+}
+
+.sect-span {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-size: 25px;
+}
+
+.icons-main {
+  display: flex;
+  justify-content: center;
+  column-gap: 25px;
+  margin-top: 2rem;
+}
+.icons-main .icon--spotify:hover {
+  background-color: #2ea44f;
+  outline-color: #2ea44f;
+}
+.icons-main .icon--youtube:hover {
+  background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%);
+  outline-color: #a02d2d;
+}
+.icons-main .icon--apple:hover {
+  background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #d6249f 60%);
+  outline-color: #a02d76;
+}
+
+.icons-main {
+  display: flex;
+  gap: 3rem;
+}
+
+.show-animation {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.spotify-container {
+  align-items: center;
+  width: 50%; /* Adjust as needed */
+  height: 500px; /* Set the height for the container */
+  border-radius: 12px; /* Add border-radius to the container */
+  overflow: hidden; /* Optional: Hide any overflow content */
+  opacity: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow */
 }
 
 /*CSS Gallery*/
@@ -269,6 +417,12 @@ body {
   }
   .button {
     font-size: 10px;
+  }
+}
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .scroll-down-link {
+    margin-top: 5rem;
   }
 }
 
