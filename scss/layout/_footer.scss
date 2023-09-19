@@ -1,6 +1,7 @@
 .bg-footer {
-    background-color: #33383c;
-    padding: 50px 0 30px;
+    background-color: rgb(134, 5, 5);
+    padding: 30px;
+    opacity: 1;
 }
 .footer-heading {
     letter-spacing: 2px;
@@ -8,7 +9,7 @@
 
 .footer-link a {
     color: #acacac;
-    line-height: 40px;
+    line-height: 20px;
     font-size: 14px;
     transition: all 0.5s;
 }
@@ -32,25 +33,6 @@
     display: inline-block;
 }
 
-.facebook {
-    background-color: #4e71a8;
-    color: #ffffff;
-}
-
-.twitter {
-    background-color: #55acee;
-    color: #ffffff;
-}
-
-.google {
-    background-color: #d6492f;
-    color: #ffffff;
-}
-
-.apple {
-    background-color: #424041;
-    color: #ffffff;
-}
 
 .footer-alt {
     color: #acacac;

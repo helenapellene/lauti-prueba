@@ -2,16 +2,10 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: black;
-  background-image: url("../assets/contact2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 body {
   font-family: "Rubik", sans-serif;
-  background-color: black;
 }
 
 .button {
@@ -107,104 +101,7 @@ body {
     top: 90%;
   }
 }
-.css-nav {
-  background-color: transparent !important;
-}
-.css-nav .logo {
-  width: 70px;
-}
-.css-nav .css-ul {
-  gap: 2rem;
-  align-items: center;
-}
-.css-nav .css-ul a {
-  color: white !important;
-  font-family: "Rubik", sans-serif;
-  font-size: 18px;
-}
-.css-nav .css-ul a:hover {
-  color: rgb(134, 5, 5) !important;
-  font-weight: bold;
-  text-decoration: underline rgb(134, 5, 5);
-}
-
-.bg-footer {
-  background-color: #33383c;
-  padding: 50px 0 30px;
-}
-
-.footer-heading {
-  letter-spacing: 2px;
-}
-
-.footer-link a {
-  color: #acacac;
-  line-height: 40px;
-  font-size: 14px;
-  transition: all 0.5s;
-}
-
-.footer-link a:hover {
-  color: #1bbc9b;
-}
-
-.contact-info {
-  color: #acacac;
-  font-size: 14px;
-}
-
-.footer-social-icon {
-  font-size: 15px;
-  height: 34px;
-  width: 34px;
-  line-height: 34px;
-  border-radius: 3px;
-  text-align: center;
-  display: inline-block;
-}
-
-.facebook {
-  background-color: #4e71a8;
-  color: #ffffff;
-}
-
-.twitter {
-  background-color: #55acee;
-  color: #ffffff;
-}
-
-.google {
-  background-color: #d6492f;
-  color: #ffffff;
-}
-
-.apple {
-  background-color: #424041;
-  color: #ffffff;
-}
-
-.footer-alt {
-  color: #acacac;
-}
-
-.footer-heading {
-  position: relative;
-  padding-bottom: 12px;
-}
-
-.footer-heading:after {
-  content: "";
-  width: 25px;
-  border-bottom: 1px solid #FFF;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  display: block;
-  border-bottom: 1px solid #1bbc9b;
-}
-
 body {
-  background-color: black;
   background-position: center;
   background-image: url("../assets/contact2.png");
   background-repeat: no-repeat;
@@ -237,11 +134,16 @@ body {
   width: 170px;
 }
 
+#about {
+  margin-bottom: 4rem;
+}
+
 .section-title {
   color: white;
   font-size: 70px;
   font-family: "Oswald", sans-serif;
   letter-spacing: 0.7rem;
+  margin: 4rem;
 }
 
 .sect-span {
@@ -405,15 +307,18 @@ body {
 }
 /*END CSS Gallery*/
 @media only screen and (min-width: 320px) and (max-width: 425px) {
+  body {
+    background-position: center;
+    background-image: url("../assets/op2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
   .hero-title {
-    font-size: 50px;
+    font-size: 80px;
   }
   .span-main {
-    font-size: 10px;
-  }
-  * {
-    background-color: black;
-    background-image: url("../assets/op2.png");
+    font-size: 15px;
   }
   .button {
     font-size: 10px;
@@ -424,6 +329,82 @@ body {
   .scroll-down-link {
     margin-top: 5rem;
   }
+}
+.css-nav {
+  background-color: transparent !important;
+}
+.css-nav .logo {
+  width: 70px;
+}
+.css-nav .css-ul {
+  gap: 2rem;
+  align-items: center;
+}
+.css-nav .css-ul a {
+  color: white !important;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
+.css-nav .css-ul a:hover {
+  color: rgb(134, 5, 5) !important;
+  font-weight: bold;
+  text-decoration: underline rgb(134, 5, 5);
+}
+
+.bg-footer {
+  background-color: rgb(134, 5, 5);
+  padding: 30px;
+  opacity: 1;
+}
+
+.footer-heading {
+  letter-spacing: 2px;
+}
+
+.footer-link a {
+  color: #acacac;
+  line-height: 20px;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+
+.footer-link a:hover {
+  color: #1bbc9b;
+}
+
+.contact-info {
+  color: #acacac;
+  font-size: 14px;
+}
+
+.footer-social-icon {
+  font-size: 15px;
+  height: 34px;
+  width: 34px;
+  line-height: 34px;
+  border-radius: 3px;
+  text-align: center;
+  display: inline-block;
+}
+
+.footer-alt {
+  color: #acacac;
+}
+
+.footer-heading {
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer-heading:after {
+  content: "";
+  width: 25px;
+  border-bottom: 1px solid #FFF;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  border-bottom: 1px solid #1bbc9b;
 }
 
 /*# sourceMappingURL=style.css.map */
