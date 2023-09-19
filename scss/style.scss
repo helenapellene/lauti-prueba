@@ -3,6 +3,8 @@
 @import "./base/typo";
 @import "./components/buttons";
 
+@import "./layout/header";
+@import "./layout/footer";
 @import "./layout/main";
 @import "./layout/sb";
 @import "./layout/proy";
@@ -10,5 +12,4 @@
 @import "./layout/gall";
 @import "./layout/mq320";
 @import "./layout/mqtablet";
-@import "./layout/header";
-@import "./layout/footer";
+@import "./layout/music";
