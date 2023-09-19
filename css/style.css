@@ -40,6 +40,10 @@ body {
   text-align: center;
 }
 
+.cont-btn {
+  margin-top: 2rem;
+}
+
 .scroll-down-link {
   position: absolute;
   display: flex;
@@ -319,6 +323,9 @@ body {
   }
   .button {
     font-size: 10px;
+  }
+  .btn-sb .button {
+    font-size: 15px;
   }
 }
 /* For Tablet View */
