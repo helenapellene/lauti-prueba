@@ -531,9 +531,6 @@ a:is(:hover, :focus) figcaption {
     font-family: "Oswald", sans-serif;
     letter-spacing: 0;
   }
-  .scroll-down-link {
-    display: none;
-  }
   .spot {
     margin: 0;
   }
