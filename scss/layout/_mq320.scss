@@ -58,3 +58,17 @@
       }
 
 }
+
+
+
+
+///////////iphone
+@media only screen 
+    and (width: 390px) 
+    and (height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) {
+        .body{
+            background-color: black;
+            background-image: url("../assets/op2.png");
+     }
+     }
