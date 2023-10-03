@@ -281,16 +281,19 @@ body {
 }
 
 .sobremi {
+  background-color: black;
   background-position: center;
   background-image: url("../assets/sobremi.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  height: 100vh;
 }
 
 .text-sb {
   color: white;
   margin: 3rem;
+  margin-bottom: 5rem;
   width: 100%;
   font-weight: 300;
   text-decoration: none;
@@ -365,113 +368,130 @@ body {
   transform: scale(1.5);
 }
 
-/*CSS Gallery*/
-.gallery-container {
+.cont-back {
+  background-color: black;
+  background-position: center;
+  background-image: url("../assets/contactomain.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.redes-cont {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: #1d1c1c;
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
-  width: 80%;
-  margin: 0 auto;
-  padding: 10px;
+  gap: 3rem;
+}
+.redes-cont .cont-t {
+  margin: 3rem;
+  font-size: 100px;
+  color: white;
+}
+.redes-cont .icons-cont {
+  display: flex;
+  gap: 2rem;
+  margin-left: 15rem;
+  margin-top: 7rem;
+}
+.redes-cont .icons-cont .icon-w {
+  width: 50px;
 }
 
-.gallery-item {
-  flex-basis: 32.7%;
-  margin-bottom: 6px;
-  opacity: 0.85;
-  cursor: pointer;
+/*CSS Gallery*/
+/*END CSS Gallery*/
+.ul-gal {
+  list-style: none;
+  margin-left: 4rem;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+  justify-content: center; /* Centra horizontalmente */
+  grid-template-columns: repeat(3, 1fr); /* Muestra tres columnas por fila */
+  max-width: 100%;
+  width: 70rem;
 }
 
-.gallery-item:hover {
+.ul-gal li {
+  flex: 1;
+}
+
+.gal-img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  transition: transform 1000ms;
+}
+
+figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+figure::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(0, 0, 0, 0.5);
+  transform-origin: center;
+  opacity: 0;
+  transform: scale(2);
+  transition: opacity 300ms;
+}
+
+figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  font-size: 1.2rem;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 600ms, transform 600ms;
+}
+
+a:is(:hover, :focus) figure::after {
   opacity: 1;
 }
 
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+a:is(:hover, :focus) figcaption {
+  opacity: 1;
+  transition: opacity 600ms;
 }
 
-.gallery-content {
-  font-size: 0.8em;
-}
-
-.lightbox {
-  position: fixed;
-  display: none;
-  background-color: rgba(0, 0, 0, 0.8);
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  top: 0;
-  left: 0;
-}
-
-.lightbox-content {
-  position: relative;
-  width: 70%;
-  height: 70%;
-  margin: 5% auto;
-}
-
-.lightbox-content img {
-  border-radius: 7px;
-  box-shadow: 0 0 3px 0 rgba(225, 225, 225, 0.25);
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.lightbox-prev,
-.lightbox-next {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #1d1c1c;
-  padding: 7px;
-  top: 45%;
-  cursor: pointer;
-}
-
-.lightbox-prev {
-  left: 0;
-}
-
-.lightbox-next {
-  right: 0;
-}
-
-.lightbox-prev:hover,
-.lightbox-next:hover {
-  opacity: 0.8;
-}
-
-@media (max-width: 767px) {
-  .gallery-container {
-    width: 100%;
+@media (prefers-reduced-motion: no-preference) {
+  figcaption {
+    transform: translate3d(0, 2rem, 0);
   }
-  .gallery-item {
-    flex-basis: 49.8%;
-    margin-bottom: 3px;
+  figure::after {
+    border-radius: 50%;
+    opacity: 1;
+    transform: scale(0);
+    transition: transform 900ms;
   }
-  .lightbox-content {
-    width: 80%;
-    height: 60%;
-    margin: 15% auto;
+  a:is(:hover, :focus) figure::after {
+    transform: scale(2.5);
+  }
+  a:is(:hover, :focus) figcaption {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: opacity 600ms 400ms, transform 600ms 400ms;
+  }
+  a:is(:hover, :focus) img {
+    transform: scale(1.2);
   }
 }
-@media (max-width: 480px) {
-  .gallery-item {
-    flex-basis: 100%;
-    margin-bottom: 1px;
-  }
-  .lightbox-content {
-    width: 90%;
-    margin: 20% auto;
-  }
-}
-/*END CSS Gallery*/
 @media only screen and (min-width: 320px) and (max-width: 425px) {
   body {
     background-color: black;
@@ -495,6 +515,19 @@ body {
   .scroll-down-link {
     margin-top: 5rem;
   }
+}
+.music {
+  background-color: black;
+  background-position: center;
+  background-image: url("../assets/music.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.spot {
+  margin: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */

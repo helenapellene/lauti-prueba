@@ -1,0 +1,33 @@
+.cont-back{
+ 
+        background-color: black;
+        background-position: center;
+        background-image: url("../assets/contactomain.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100vh;
+    
+}
+
+
+.redes-cont{
+        display:flex;
+        gap:3rem;
+        .cont-t{
+                margin:3rem;
+                font-size: 100px;
+                color:white;
+                
+        }
+        .icons-cont{
+                display: flex;
+                gap:2rem;
+                margin-left: 15rem;
+                margin-top: 7rem;
+                .icon-w{
+                        width:50px;
+
+                }
+        }
+}

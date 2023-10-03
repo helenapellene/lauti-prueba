@@ -113,3 +113,14 @@ ScrollReveal().reveal(".hero-title", {
     distance: "100px",
     origin: window.innerWidth > 768 ? "left" : "top",
   });
+
+
+
+
+
+
+
+
+  ////////////////contacto
+
+
