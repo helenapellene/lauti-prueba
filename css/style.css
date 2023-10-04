@@ -493,6 +493,7 @@ a:is(:hover, :focus) figcaption {
 }
 @media only screen and (min-width: 320px) and (max-width: 425px) {
   body {
+    background-color: black;
     background-position: center;
     background-image: url("../assets/op2.png");
     background-repeat: no-repeat;
@@ -536,15 +537,44 @@ a:is(:hover, :focus) figcaption {
   }
 }
 @media only screen and (width: 390px) and (height: 844px) and (-webkit-device-pixel-ratio: 3) {
-  .body {
+  body {
     background-color: black;
     background-image: url("../assets/op2.png");
   }
 }
 /* For Tablet View */
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+  .hero-title {
+    font-family: "Oswald", sans-serif;
+    margin-top: 10rem;
+    font-size: 150px;
+    color: white;
+  }
+  .span-main {
+    font-family: "Oswald", sans-serif;
+    color: white;
+    font-size: 40px;
+    margin: 2rem;
+  }
+  .button {
+    font-size: 30px;
+  }
   .scroll-down-link {
     margin-top: 5rem;
+  }
+}
+@media only screen and (min-width: 1445px) and (max-width: 2560px) {
+  .hero-title {
+    font-family: "Oswald", sans-serif;
+    margin-top: 15rem;
+    font-size: 200px;
+    color: white;
+  }
+  .span-main {
+    font-size: 70px;
+  }
+  .button {
+    font-size: 40px;
   }
 }
 .music {
