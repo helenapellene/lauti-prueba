@@ -187,6 +187,7 @@ body {
 }
 
 body {
+  background-color: black;
   background-position: center;
   background-image: url("../assets/contact2.png");
   background-repeat: no-repeat;
