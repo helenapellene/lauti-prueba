@@ -238,43 +238,26 @@ body {
   font-size: 25px;
 }
 
-.icons-main {
+.social-media-buttons {
   display: flex;
   justify-content: center;
-  column-gap: 25px;
-  margin-top: 2rem;
-}
-.icons-main .icon--spotify:hover {
-  background-color: #2ea44f;
-  outline-color: #2ea44f;
-}
-.icons-main .icon--youtube:hover {
-  background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%);
-  outline-color: #a02d2d;
-}
-.icons-main .icon--apple:hover {
-  background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #d6249f 60%);
-  outline-color: #a02d76;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
-.icons-main {
-  display: flex;
-  gap: 3rem;
+.social-media-button:hover {
+  outline-offset: 3px;
+  transition: all 0.3s;
 }
 
-.show-animation {
-  animation-name: fadeIn;
-  animation-duration: 3s;
+.social-media-button img {
+  transition: all 0.3s;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.social-media-button:hover img {
+  transform: scale(1.15);
 }
+
 .spotify-container {
   align-items: center;
   width: 50%; /* Adjust as needed */
@@ -492,7 +475,7 @@ a:is(:hover, :focus) figcaption {
     transform: scale(1.2);
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 425px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   body {
     background-color: black;
     background-position: center;

@@ -57,55 +57,82 @@ body{
         font-size: 25px;
 }
 
-.icons-main {
+
+.social-media-buttons {
   display: flex;
   justify-content: center;
-  column-gap: 25px;
-  margin-top:2rem;
-
-  .icon--spotify:hover {
-      background-color: #2ea44f;
-      outline-color: #2ea44f;
-  }
-  .icon--youtube:hover {
-      background-image: radial-gradient(
-          circle at 30% 107%,
-          #fdf497 0%,
-          #fdf497 5%,
-          #fd5949 45%,
-      );
-      outline-color: #a02d2d;
-  }
-  .icon--apple:hover {
-      background-image: radial-gradient(
-          circle at 30% 107%,
-          #fdf497 0%,
-          #d6249f 60%,
-      );
-      outline-color: #a02d76;
-  }
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
-.icons-main{
-  display:flex;
-  gap:3rem;
+.social-media-button:hover {
+  outline-offset: 3px;
+  transition: all 0.3s;
+}
+
+.social-media-button img {
+  transition: all 0.3s;
+}
+
+.social-media-button:hover img {
+  transform: scale(1.15);
 }
 
 
 
-  .show-animation {
-    animation-name: fadeIn;
-    animation-duration: 3s;
-  }
+
+
+
+
+// .icons-main {
+//   display: flex;
+//   justify-content: center;
+//   column-gap: 25px;
+//   margin-top:2rem;
+
+//   .icon--spotify:hover {
+//       background-color: #2ea44f;
+//       outline-color: #2ea44f;
+//   }
+//   .icon--youtube:hover {
+//       background-image: radial-gradient(
+//           circle at 30% 107%,
+//           #fdf497 0%,
+//           #fdf497 5%,
+//           #fd5949 45%,
+//       );
+//       outline-color: #a02d2d;
+//   }
+//   .icon--apple:hover {
+//       background-image: radial-gradient(
+//           circle at 30% 107%,
+//           #fdf497 0%,
+//           #d6249f 60%,
+//       );
+//       outline-color: #a02d76;
+//   }
+// }
+
+// .icons-main{
+//   display:flex;
+//   gap:3rem;
+// }
+
+
+
+//   .show-animation {
+//     animation-name: fadeIn;
+//     animation-duration: 3s;
+//   }
   
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+//   @keyframes fadeIn {
+//     from {
+//       opacity: 0;
+//     }
+//     to {
+//       opacity: 1;
+//     }
+//   }
   
   .spotify-container {
     align-items: center;
