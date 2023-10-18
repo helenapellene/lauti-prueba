@@ -708,7 +708,7 @@ a:is(:hover, :focus) figcaption {
     font-size: 75px;
   }
   .span-main {
-    font-size: 20px;
+    font-size: 25px;
   }
   .scroll-down {
     align-items: center;
@@ -738,9 +738,12 @@ a:is(:hover, :focus) figcaption {
     margin: 5% auto;
   }
   .section-title {
-    font-size: 30px;
+    font-size: 80px;
     font-family: "Oswald", sans-serif;
     letter-spacing: 0;
+  }
+  .sect-span {
+    font-size: 25px;
   }
   .spot {
     margin: 0;
