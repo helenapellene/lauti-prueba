@@ -711,7 +711,7 @@ a:is(:hover, :focus) figcaption {
     font-size: 20px;
   }
   .scroll-down {
-    display: none;
+    align-items: center;
   }
   .button {
     font-size: 20px;
@@ -721,6 +721,7 @@ a:is(:hover, :focus) figcaption {
   }
   .button {
     background-color: rgb(134, 5, 5);
+    margin-bottom: 4rem;
   }
   .sobremi {
     background-color: black;
