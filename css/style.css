@@ -697,7 +697,8 @@ a:is(:hover, :focus) figcaption {
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   body {
     background-color: black;
-    background-image: url("../assets/sobremi.png");
+    background-position: center;
+    background-image: url("../assets/sud-mob.jpeg");
   }
   .hero-title {
     font-size: 70px;
