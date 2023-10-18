@@ -704,6 +704,7 @@ a:is(:hover, :focus) figcaption {
     background-repeat: no-repeat; /* Evita que la imagen se repita */
   }
   .hero-title {
+    margin-top: 4rem;
     font-size: 75px;
   }
   .span-main {
