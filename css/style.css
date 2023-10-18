@@ -743,7 +743,7 @@ a:is(:hover, :focus) figcaption {
     letter-spacing: 0;
   }
   .sect-span {
-    font-size: 25px;
+    font-size: 20px;
   }
   .spot {
     margin: 0;
