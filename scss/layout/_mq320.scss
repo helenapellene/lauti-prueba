@@ -2,27 +2,31 @@
     body {
         background-color: black;
         background-position: center;
-        background-image: url("../assets/sud-mob.jpeg");
-        
+        background-image: url("../assets/sud2.png");
+        background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+    
     }
 
     .hero-title {
-        font-size: 70px;
+        font-size: 80px;
     }
 
     .span-main {
-        font-size: 15px;
+        font-size: 17px;
     }
 
-
+    .scroll-down{
+        display: none;
+    }
 
     .button {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .btn-sb {
         .button {
-            font-size: 15px;
+            font-size: 17px;
         }
     }
 
@@ -33,7 +37,6 @@
     /////sobremi
     .sobremi {
         background-color: black;
-        background-image: url("../assets/sobremi.png");
         .text-sb{
             margin: 1rem 0 2rem 0;
             text-align: center;
@@ -73,13 +76,4 @@
 
 
 
-///////////iphone
-@media only screen 
-    and (width: 390px) 
-    and (height: 844px) 
-    and (-webkit-device-pixel-ratio: 3) {
-        body{
-            background-color: black;
-            background-image: url("../assets/op2.png");
-     }
-     }
+     
