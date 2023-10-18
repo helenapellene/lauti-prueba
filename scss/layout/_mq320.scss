@@ -5,7 +5,7 @@
         background-image: url("../assets/sud2.png");
         background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
         background-repeat: no-repeat; /* Evita que la imagen se repita */
-    
+        background-attachment: fixed;
     }
 
     .hero-title {
@@ -14,7 +14,7 @@
     }
 
     .span-main {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .scroll-down{
