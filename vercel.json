@@ -1,6 +1,6 @@
 {
     "rewrites": [
-      { "source": "/sb", "destination": "/sb.html" }
+      { "source": "/sobremi", "destination": "/sobremi.html" }
     ]
   }
   
