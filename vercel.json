@@ -1,0 +1,6 @@
+{
+    "rewrites": [
+      { "source": "/sb.html", "destination": "/sb.html" }
+    ]
+  }
+  
