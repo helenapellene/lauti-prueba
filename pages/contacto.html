@@ -76,49 +76,58 @@
                 </div>
             </div> -->
             
-            <section id="contact">
-  
-                <h1 class="section-header">Contact</h1>
-                
-                <div class="contact-wrapper">
-                
-
-                  
-                <!-- Left contact page --> 
-                  
-                    <div class="direct-contact-container">
-              
-                      <ul class="contact-list">
-                        <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Tulum, Mexico</span></i></li>
-                        
-                        
-                        <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">laupellene@gmail.com</a></span></i></li>
-                        
-                      </ul>
-              
-                      <hr>
-                      <ul class="social-media-list">
+            <section id="contact" class="py-5">
+                <div class="container">
+                  <h2 class="section-header text-white mb-5">Contact</h2>
+                  <div class="row align-items-start">
                     
-                        
-                        <li><a href="https://www.facebook.com/lau.pellene" target="_blank" class="contact-icon">
-                          <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <!-- Columna izquierda: ubicación y redes -->
+                    <div class="col-md-6 text-white">
+                      <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                          <i class="fa fa-map-marker fa-lg me-2"></i>
+                          <span>Tulum, Mexico</span>
                         </li>
-                        <li><a href="https://www.instagram.com/laupellene/" target="_blank" class="contact-icon">
-                          <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>    
-                        <li><a href="https://www.youtube.com/@lautaritop" target="_blank" class="contact-icon">
-                            <i class="fa fa-youtube" aria-hidden="true"></i></a>
-                          </li>   
+                        <li class="mb-2">
+                          <i class="fa fa-envelope fa-lg me-2"></i>
+                          <span><a href="mailto:laupellene@gmail.com" class="text-white text-decoration-none">laupellene@gmail.com</a></span>
+                        </li>
                       </ul>
-                      <hr>
-              
-                      <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
-              
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/lau.pellene" target="_blank" class="text-white"><i class="fa fa-facebook fa-lg"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/laupellene/" target="_blank" class="text-white"><i class="fa fa-instagram fa-lg"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.youtube.com/@lautaritop" target="_blank" class="text-white"><i class="fa fa-youtube fa-lg"></i></a></li>
+                      </ul>
                     </div>
+              
+                    <!-- Columna derecha: formulario -->
+                    <div class="col-md-6">
+                      <form action="https://formspree.io/f/your-form-id" method="POST" class="row g-3">
+                        <div class="col-md-6">
+                          <label for="name" class="form-label text-white">Nombre</label>
+                          <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="email" class="form-label text-white">Correo electrónico</label>
+                          <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="col-12">
+                          <label for="consulta" class="form-label text-white">Tu consulta</label>
+                          <textarea class="form-control" id="consulta" name="consulta" rows="5" required></textarea>
+                        </div>
+                        <div class="col-12 text-end">
+                          <button class="btn btn-naranja" type="submit">Enviar consulta</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
                   
                 </div>
+
                 
-              </section>  
                 
                 
     </main>
