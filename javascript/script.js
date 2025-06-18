@@ -124,3 +124,28 @@ ScrollReveal().reveal(".hero-title", {
   ////////////////contacto
 
 
+  const form = document.querySelector('form[action*="formspree.io"]');
+  const success = document.getElementById('form-success');
+  const error = document.getElementById('form-error');
+
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    const data = new FormData(form);
+    const resp = await fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+    if (resp.ok) {
+      form.reset();
+      success.style.display = '';
+      error.style.display = 'none';
+    } else {
+      error.style.display = '';
+      success.style.display = 'none';
+    }
+  });
+
+
+
+
