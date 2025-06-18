@@ -35,6 +35,9 @@
 }
 .cont-btn{
   margin-top:2rem;
+  margin-bottom: 4rem;   /*  ↑ añade espacio extra debajo */
+  position: relative;    
+  z-index: 2; 
 }
 
 .scroll-down-link {
@@ -43,7 +46,8 @@
   justify-content: center;
   align-items: center;
   left: 50%;
-  bottom: 50px;
+    bottom: 2rem;          /*  ↑ ajusta este valor para empujarla más abajo */
+  z-index: 1;
   transform: translateX(-50%);
 }
 .scroll-down {
